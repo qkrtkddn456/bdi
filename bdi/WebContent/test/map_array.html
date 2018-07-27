@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Map Array Test</title>
+</head>
+<body>
+<div id="rDiv"></div>
+<script>
+	var arr = [[1,2,3,4],[1,2,3,4,5],[1,2,3,4,5,6]];
+	var div = document.querySelector('#rDiv');
+	
+	var t = '';
+	for(var i=0; i<arr.length;i++){
+		var ar = arr[i];
+		t += '<table border="1">';
+		t +='<tr>';
+		for(var j=0;j<ar.length;j++){
+			t +='<td>'+ar[j];
+			t +='</td>';
+		}
+		t +='</tr>';
+		t += '</table>'
+	}
+	
+	div.innerHTML = t;
+</script>
+</body>
+</html>
